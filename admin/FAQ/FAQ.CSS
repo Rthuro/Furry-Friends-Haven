@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 190vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: rgb(238, 237, 234);
+}
+
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 26px;
+}
+
+.menu li:hover{
+    background: rgb(236, 224, 203);
+}
+
+.active{
+    background: rgb(236, 224, 203);
+}
+
+.menu a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a span{
+    overflow: hidden;
+
+}
+
+.menu a i{
+    font-size: 1.2rem;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main--content{
+    position: relative;
+    background: rgb(248, 247, 246);
+    width: 100%;
+    padding: 1rem;
+    width: 100%
+
+}
+
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(236, 224, 203);
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin: 1rem;
+    
+}
+
+.header--title{
+    color: rgb(37, 33, 30) ;
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.search--box{
+    background: #eeeeee;
+    border-radius: 15px;
+    color: rgb(28, 24, 24);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.search--box input{
+    background: transparent;
+    padding: 10px;
+}
+
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box i:hover{
+    transform: scale(1.2);
+
+
+}
+
+.tabular--wrapper{
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+   
+}
+
+
+.table-container{
+    width: 100%;
+
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button{
+    color: black;
+    font-weight: 600;
+    
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown button .fa {
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5e3c9;
+    border-radius: 10px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+
+
+.dropdown-sidebar {
+    position: relative;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+  
+.dropdown-sidebar:hover .dropdown-menu {
+    display: block;
+  
+}
+
+
+.faq-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.faq-container2 h2{
+    font-size: 20px;
+}
+  
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.add-faq-button {
+    background-color: rgb(237, 194, 124);;
+    color: rgb(32, 31, 31);
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-table button{
+    color: rgb(129, 90, 18);
+    background: transparent;
+}
+  
+.search--box {
+    margin-bottom: 20px;
+    margin-top: -63px;
+
+}
+  
+.faq-search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+  
+.faq-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.faq-table th,
+.faq-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+  
+.faq-table th {
+    
+    background:rgb(237, 194, 124);
+    color: #1d1a1a;
+}
+
+
+
+@media (max-width: 768px) {
+    .main--content {
+      position: absolute;
+      left: 140px;
+      right: 0;
+      transition: all 0.5s linear;
+    }
+  
+    .sidebar:hover + .main--content {
+      left: 270px;
+      transition: all 0.5s linear;
+    }
+
+    .main--content{
+        width: 80%;
+    }
+
+    
+
+    .sidebar:hover{
+        width: 280px;
+        transition: 0.5s;
+        
+    }
+    
+    .header--wrapper {
+        flex-wrap: wrap; 
+    }
+        
+    .header--wrapper img {
+        display: none;
+               
+    }
+    .header--title{
+    color: rgb(37, 33, 30);
+    font-size: 18px;
+    }
+
+    .sidebar{
+        position: sticky;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 140px;
+        height: 195vh;
+        padding: 0 1.7rem;
+        color: #fff;
+        overflow: hidden;
+        transition: all 0.5s linear;
+        background-color: rgb(238, 237, 234);
+    }
+    
+    .search--box{
+        background: #eeeeee;
+        border-radius: 15px;
+        color: rgb(28, 24, 24);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 4px 12px;
+        margin-bottom: 10px;
+        width: 170px;
+    
+    }
+
+   
+
+    
+    
+
+}
+  

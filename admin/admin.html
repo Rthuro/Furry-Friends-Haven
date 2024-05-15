@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo"></div>
+        
+        <ul class="menu">
+            <li class="active">
+                <a href="admin.html">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./admin-profile.html">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="view-donation.html">
+                    <i class="fas fa-donate"></i>
+                    <span>Donation</span>
+                </a>
+            </li>
+    
+            <li class="dropdown-sidebar">
+                <a href="view-adoption.html">
+                    <i class="fas fa-heart"></i>
+                    <span>Adoption</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="form-adoption.html">Adoption Forms</a></li>
+                    <li><a href="view-adoptionform.html">Animal Profiles</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="FAQ/FAQ.HTML">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQs</span>
+                </a>
+
+
+                
+            </li>
+    
+            <li class="dropdown-sidebar">
+                <a href="">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Settings and Privacy</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="./security.pri/security.html">Account Settings</a></li>
+                    <li><a href="./security.pri/term.html">Terms and Privacy</a></li>
+                </ul>
+            </li>
+    
+            <li>
+                <a href="./security.pri/login.html">
+                    <i class="fas fa-sign-out"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+    
+    
+        <ul>
+    
+    </div>
+    
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Admin</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search"/>
+                </div>
+                
+            </div>
+            <img src="../images/12.png" alt="">
+        </div>
+        
+        <div class="card--container">
+            <h3 class="main--title">Hello, Admin!</h3>
+            <div class="card--wrapper">
+               
+                <a href="form-adoption.html">
+                    <div class="mains--card">
+                    
+                   
+                        <div class="card--header">
+                            <div class="amount">
+                                <span class="title">
+                                    Adoption Form
+                                </span>
+                                <span class="value">23</span>
+                            </div>
+                            <i class="fas fa-file-invoice"></i>
+    
+                        </div>
+                        <span class="card-detail"></span>
+                    </div>
+                </a>
+
+                <a href="view-adoptionform.html">
+                    <div class="mains--card">
+                        <div class="card--header">
+                            <div class="amount">
+                                <span class="title">
+                                    Sheltered
+                                </span>
+                                <span class="value">160</span>
+                            </div>
+                            <i class="fas fa-warehouse"></i>
+    
+                        </div>
+                        <span class="card-detail"></span>
+                    </div>
+                </a>
+
+                <a href="view-adoptionform.html">
+                    <div class="mains--card">
+                        <div class="card--header">
+                            <div class="amount">
+                                <span class="title">
+                                    Rehomed
+                                </span>
+                                <span class="value">67</span>
+                            </div>
+                            <i class="fas fa-heart-circle-check"></i>
+    
+                        </div>
+                        <span class="card-detail"></span>
+                    </div>
+                </a>
+
+                <a href="form-adoption.html">
+                    <div class="mains--card">
+                        <div class="card--header">
+                            <div class="amount">
+                                <span class="title">
+                                    Pending Adoptions
+                                </span>
+                                <span class="value">85</span>
+                            </div>
+                            <i class="fas fa-file-waveform"></i>
+    
+                        </div>
+                        <span class="card-detail"></span>
+                    </div>
+                </a>
+
+                
+            </div>
+        </div>
+
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Recent Donations</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Transaction Mode</th>
+                            <th>Account Name</th>
+                            <th>Account Number</th>
+                            <th>Reference Number</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Ashly Rosco</td>
+                                <td>230.00</td>
+                                <td>Gcash</td>
+                                <td>Ashly Rosco</td>
+                                <td>2343</td>
+                                <td>232323232</td>
+                                <td>04-21-2024</td>
+                                <td><button>View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Ashly Rosco</td>
+                                <td>230.00</td>
+                                <td>Gcash</td>
+                                <td>Ashly Rosco</td>
+                                <td>2343</td>
+                                <td>232323232</td>
+                                <td>04-21-2024</td>
+                                <td><button>View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Ashly Rosco</td>
+                                <td>230.00</td>
+                                <td>Gcash</td>
+                                <td>Ashly Rosco</td>
+                                <td>2343</td>
+                                <td>232323232</td>
+                                <td>04-21-2024</td>
+                                <td><button>View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Ashly Rosco</td>
+                                <td>230.00</td>
+                                <td>Gcash</td>
+                                <td>Ashly Rosco</td>
+                                <td>2343</td>
+                                <td>232323232</td>
+                                <td>04-21-2024</td>
+                                <td><button>View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Ashly Rosco</td>
+                                <td>230.00</td>
+                                <td>Gcash</td>
+                                <td>Ashly Rosco</td>
+                                <td>2343</td>
+                                <td>232323232</td>
+                                <td>04-21-2024</td>
+                                <td><button>View</button></td>
+                            </tr>
+
+                            
+
+                           
+                        </tbody>
+                        <tfoot>
+                           <tr>
+                            <td colspan="8">Total: 200</td>
+                           </tr> 
+                        </tfoot>
+                    </thead>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

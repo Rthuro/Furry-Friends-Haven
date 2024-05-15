@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New</title>
+    <link rel="stylesheet" href="add.new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <body>
+        <div class="sidebar">
+            <div class="logo"></div>
+            
+            <ul class="menu">
+                <li>
+                    <a href="admin.html">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="admin-profile.html">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="view-donation.html">
+                        <i class="fas fa-donate"></i>
+                        <span>Donation</span>
+                    </a>
+                </li>
+    
+                <li class="dropdown-sidebar">
+                    <a href="">
+                        <i class="fas fa-heart"></i>
+                        <span>Adoption</span>
+                    </a>
+    
+                    <ul class="dropdown-menu">
+                        <li><a href="form-adoption.html">Adoption Forms</a></li>
+                        <li><a href="view-adoptionform.html">Animal Profiles</a></li>
+                      </ul>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQs</span>
+                    </a>
+                </li>
+        
+                <li class="dropdown-sidebar">
+                    <a href="#">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Settings and Privacy</span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="./security.pri/security.html">Account Settings</a></li>
+                        <li><a href="./security.pri/term.html">Terms and Privacy</a></li>
+                    </ul>
+                </li>
+        
+                <li>
+                    <a href="../security.pri/login.html">
+                        <i class="fas fa-sign-out"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+        
+        
+            <ul>
+        
+        </div>
+        
+        <div class="main--content">
+            <div class="header--wrapper">
+                <div class="header--title">
+                    <span>Adoption</span>
+                    <h2>Animal Profiles</h2>
+                </div>
+                
+                    
+               
+                <img src="/images/13.png" alt="">
+            </div>
+
+
+            <div class="add-new">
+
+                
+
+                <form>
+                    <img id="profile-picture-preview" src="/images/12.png" alt="" class="circle">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age"><br>
+                    <label for="breed">Breed:</label><br>
+                    <input type="text" id="breed"></input><br>
+                    <label for="profile-picture">Profile picture:</label><br>
+                    <input type="file" id="profile-picture" name="profile-picture"><br>
+                    <input type="submit" value="Submit">
+                  </form>
+
+            </div>
+        
+        </div>
+    </div>
+    
+</body>
+</html>

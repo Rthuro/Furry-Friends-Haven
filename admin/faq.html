@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <p>The beggining of the blalalala</p>
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+            <button class="accordion">
+                Do you offer any volunteer opportunities?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="pannel">
+                <p>
+                    Yes! We rely on volunteers to help with various tasks. You may contact us at our mobile number (+63944324527), and come at our shelter. We are located at Canelar, Zamboanga City.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                What is dddd?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="pannel">
+                <p>
+                    dkhahshshshshshshs
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            
+            this.classList.toggle("active");
+            
+            var panel = this.nextElementSibling;
+            
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+    </script>
+    
+</body>
+</html>

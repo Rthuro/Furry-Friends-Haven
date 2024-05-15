@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security and Privacy</title>
+    <link rel="stylesheet" href="security.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        
+        <ul class="menu">
+            <li>
+                <a href="../admin.html">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="../admin-profile.html">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="../view-donation.html">
+                    <i class="fas fa-donate"></i>
+                    <span>Donation</span>
+                </a>
+            </li>
+    
+            <li class="dropdown-sidebar">
+                <a href="">
+                    <i class="fas fa-heart"></i>
+                    <span>Adoption</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="../form-adoption.html">Adoption Forms</a></li>
+                    <li><a href="../view-adoptionform.html">Animal Profiles</a></li>
+                </ul>
+
+                
+            </li>
+            
+            <li>
+                <a href="../FAQ/FAQ.HTML">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQs</span>
+                </a>
+            </li>
+    
+            <li class="dropdown-sidebar" id="active">
+                <a href="">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Settings and Privacy</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li id="active"><a href="./security.html">Account Settings</a></li>
+                    <li><a href="./term.html">Terms and Privacy</a></li>
+                </ul>
+            </li>
+    
+            <li>
+                <a href="./login.html">
+                    <i class="fas fa-sign-out"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        <ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Security and Privacy</span>
+                <h2>Account Settings</h2>
+            </div>
+            
+                
+           
+            
+        </div>
+
+        <div class="container">
+
+            <div class="profile-pic-wrapper">
+                <img src="../../images/12.png" alt="Profile Picture" class="profile-picture">
+                <button class="pfp-btn">Change Profile Photo</button>
+            </div>
+                
+            <div class="section">
+                <h2>Account Details</h2>
+                <p></p>
+                <form>
+
+                    
+
+                    <label for="name">First Name:</label>
+                    <input type="text" id="fname" name="fname" value="Beverly">
+
+                    <label for="name">Surname:</label>
+                    <input type="text" id="sname" name="sname" value="Heal">
+
+                    <label for="name">Email</label>
+                    <input type="email" id="email" name="email" value="beverlyheal@gmail.com">
+               
+                    <div id="verification-container" style="display:none;">
+                        <label for="verification">Verification Code:</label>
+                        <input type="text" id="verification" name="verification">
+              
+                        <button type="button" id="send-verification">Send Verification Code</button>
+                    </div>
+                   
+
+                    <label for="name">Mobile Number</label>
+                    <input type="text" id="num" name="num" value="095565656656">
+
+
+                    <button type="cancel">Cancel</button>
+
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Account Security</h2>
+                <p></p>
+                <form>
+
+                    <label for="password">Old Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="password">Change Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="password">Confirm Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <div id="verification-container" style="display:none;">
+                        <label for="verification">Verification Code:</label>
+                        <input type="text" id="verification" name="verification">
+            
+                        <button type="button" id="send-verification">Send Verification Code</button>
+                    </div>
+
+                    <button type="cancel">Cancel</button>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+            
+            <div class="section">
+                <h2>Privacy Settings</h2>
+                <p>What notifications do you prefer to receive?</p>
+                <form>
+                    <fieldset>
+                        <legend>Notification Preferences:</legend>
+
+                        <select id="email-notifications" name="email-notifications">
+                            <option value="all">All</option>
+                            <option value="important">Important Only</option>
+                            <option value="none">None</option>
+                        </select>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="mobile-notifications" name="mobile-notifications">
+                        <label for="mobile-notifications">Receive notifications on my mobile number</label><br>
+                        <input type="checkbox" id="email-notifications" name="email-notifications" checked>
+                        <label for="mobile-notifications">Receive notifications on my email</label><br>
+                        <input type="checkbox" id="both-notifications" name="both-notifications">
+                        <label for="both-notifications">Receive notifications by email and mobile number</label>
+                        <br>
+                    </fieldset>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Two-Factor Authentication</h2>
+                <p>Enable two-factor authentication for added security.</p>
+                <form>
+                    <label for="two-factor-auth">Two-Factor Authentication:</label>
+                    <select id="two-factor-auth" name="two-factor-auth">
+                        <option value="enabled">Enabled</option>
+                        <option value="disabled">Disabled</option>
+                    </select>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+        
+
+
+
+
+
+        
+
+    </div>
+
+    <script src="security.js">
+
+        
+    </script>
+
+</body>
+</html>

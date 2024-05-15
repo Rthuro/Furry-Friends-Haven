@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 148.5vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: rgb(238, 237, 234);
+}
+
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 26px;
+}
+
+.menu li:hover{
+    background: rgb(236, 224, 203);
+}
+
+.active{
+    background: rgb(236, 224, 203);
+}
+
+.menu a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a span{
+    overflow: hidden;
+
+}
+
+.menu a i{
+    font-size: 1.2rem;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main--content{
+    position: relative;
+    background: rgb(248, 247, 246);
+    width: 100%;
+    padding: 1rem;
+    width: 100%
+
+}
+
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(236, 224, 203);
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin: 1rem;
+    
+}
+
+.header--title{
+    color: rgb(37, 33, 30) ;
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.search--box{
+    background: #f2f2f2;
+    border-radius: 15px;
+    color: rgb(28, 24, 24);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.search--box input{
+    background: transparent;
+    padding: 10px;
+}
+
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box i:hover{
+    transform: scale(1.2);
+
+
+}
+
+
+
+.tabular--wrapper{
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+   
+}
+
+
+.table-container{
+    width: 100%;
+
+
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    
+}
+
+thead{
+    background:rgb(237, 194, 124);
+    color: #1d1a1a;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+}
+
+tbody{
+    background: #f2f2f2;
+    
+
+}
+
+td{
+    padding:15px;
+    font-size: 14px;
+    
+}
+
+
+tr:nth-child(even){
+    background: #fff;
+}
+
+tfoot{
+    background: #fff;
+    font-weight: bold;
+    color: #fff;
+}
+
+tfoot td{
+    padding: 15px;
+    color: #1a1717;
+}
+
+#download{
+    background: rgb(237, 194, 124);
+    font-weight: bold;
+    color: #fff;
+}
+
+.table-container button{
+    color: rgb(129, 90, 18);
+    background: none;
+    cursor: pointer;
+   
+}
+
+
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+  
+.table-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+  
+.table-header button:hover {
+    background-color: rgb(236, 224, 203);
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.table-container .table-header .pending-btn {
+    background-color: rgb(236, 224, 203);
+    color: #1b1818;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.table-header a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+  
+
+
+.center-cell button{
+
+}
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button{
+    color: black;
+    font-weight: 600;
+    
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown button .fa {
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f5e3c9;
+    border-radius: 10px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+
+.dropdown-sidebar {
+    position: relative;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+  
+.dropdown-sidebar:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+  
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#rehomed{
+    background-color: #f0eeee;;
+}
+
+.profile-container img{
+    border-radius: 50%;
+    height: 35px;
+    align-items: center;
+}
+
+.center-cell button:hover{
+    color: white;
+    background: #c5ac84;
+}
+
+
+@media (max-width: 768px) {
+    .main--content {
+      position: absolute;
+      left: 140px;
+      right: 0;
+      transition: all 0.5s linear;
+    }
+  
+    .sidebar:hover + .main--content {
+      left: 270px;
+      transition: all 0.5s linear;
+    }
+
+    .main--content{
+        width: 80%;
+    }
+
+    .table-container {
+        position: relative
+        max-height: 80vh; 
+        overflow-y: scroll;
+    }
+
+    .sidebar:hover{
+        width: 280px;
+        transition: 0.5s;
+        
+        }
+    
+        .header--wrapper {
+            flex-wrap: wrap; 
+        }
+        
+        .header--wrapper img {
+            height: 35px;
+            width: 35px;
+            
+            
+        }
+
+   
+     
+
+   
+    
+   
+
+
+}
+  
